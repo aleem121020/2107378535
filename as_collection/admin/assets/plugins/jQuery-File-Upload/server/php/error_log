@@ -1,0 +1,8 @@
+[27-Jan-2024 23:41:32 UTC] PHP Warning:  Trying to access array offset on null in /home1/adjoiegw/deepakkumarbros.com/admin/assets/plugins/jQuery-File-Upload/server/php/UploadHandler.php on line 503
+[27-Jan-2024 23:41:32 UTC] PHP Warning:  A non-numeric value encountered in /home1/adjoiegw/deepakkumarbros.com/admin/assets/plugins/jQuery-File-Upload/server/php/UploadHandler.php on line 413
+[27-Jan-2024 23:41:35 UTC] PHP Warning:  Trying to access array offset on null in /home1/adjoiegw/deepakkumarbros.com/admin/assets/plugins/jQuery-File-Upload/server/php/UploadHandler.php on line 503
+[27-Jan-2024 23:41:35 UTC] PHP Warning:  A non-numeric value encountered in /home1/adjoiegw/deepakkumarbros.com/admin/assets/plugins/jQuery-File-Upload/server/php/UploadHandler.php on line 413
+[27-Jun-2024 06:12:28 UTC] PHP Warning:  Trying to access array offset on value of type null in /home1/adjoiegw/deepakkumarbros.com/admin/assets/plugins/jQuery-File-Upload/server/php/UploadHandler.php on line 503
+[27-Jun-2024 06:12:28 UTC] PHP Warning:  A non-numeric value encountered in /home1/adjoiegw/deepakkumarbros.com/admin/assets/plugins/jQuery-File-Upload/server/php/UploadHandler.php on line 413
+[27-Jun-2024 06:12:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home1/adjoiegw/deepakkumarbros.com/admin/assets/plugins/jQuery-File-Upload/server/php/UploadHandler.php on line 503
+[27-Jun-2024 06:12:35 UTC] PHP Warning:  A non-numeric value encountered in /home1/adjoiegw/deepakkumarbros.com/admin/assets/plugins/jQuery-File-Upload/server/php/UploadHandler.php on line 413
